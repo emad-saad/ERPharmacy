@@ -44,7 +44,7 @@ namespace sehetak.Controllers
         public IActionResult ItemCard()
         {
 
-
+            //Ahmed zoz
 
             List<Itemsproducers> cl = new List<Itemsproducers>();
             cl = (from c in _context.Itemsproducers select c).ToList();
