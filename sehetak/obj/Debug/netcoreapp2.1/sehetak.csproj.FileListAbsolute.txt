@@ -1,0 +1,134 @@
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.deps.json
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.runtimeconfig.json
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.runtimeconfig.dev.json
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.dll
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorAssemblyInfo.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorAssemblyInfo.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.AssemblyInfoInputs.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.AssemblyInfo.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.TagHelpers.input.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.TagHelpers.output.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorCoreGenerate.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorTargetAssemblyInfo.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorTargetAssemblyInfo.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.pdb
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.Views.dll
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.Views.pdb
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.Views.pdb
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.dll
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.pdb
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csproj.CopyComplete
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LoginLayout.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csprojAssemblyReference.cache
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.g.cshtml.cs
+C:\Users\Ahmed.Azoz\Documents\Visual Studio 2017\Projects\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.g.cshtml.cs
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.deps.json
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.runtimeconfig.json
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.runtimeconfig.dev.json
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.dll
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.pdb
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.Views.dll
+D:\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.Views.pdb
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csproj.CoreCompileInputs.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorAssemblyInfo.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorAssemblyInfo.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.AssemblyInfoInputs.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.AssemblyInfo.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.TagHelpers.input.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.TagHelpers.output.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorCoreGenerate.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\EzenEstlamAssnaf.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\ItemCard.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Purchase.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Returns.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\TalabSarfAsnaf.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Create.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Delete.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Details.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Edit.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Index.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\BodyContent.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LoginLayout.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorTargetAssemblyInfo.cache
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorTargetAssemblyInfo.cs
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.Views.pdb
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.dll
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.pdb
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csproj.CopyComplete
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csprojAssemblyReference.cache
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.deps.json
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.runtimeconfig.json
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.runtimeconfig.dev.json
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.dll
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.pdb
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.Views.dll
+E:\zz\sehetak\sehetak\sehetak\bin\Debug\netcoreapp2.1\sehetak.Views.pdb
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csprojAssemblyReference.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csproj.CoreCompileInputs.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorAssemblyInfo.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorAssemblyInfo.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.AssemblyInfoInputs.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.AssemblyInfo.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.TagHelpers.input.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.TagHelpers.output.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorCoreGenerate.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\EzenEstlamAssnaf.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\ItemCard.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Purchase.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\Returns.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Home\TalabSarfAsnaf.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Create.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Delete.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Details.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Edit.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\Index.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\BodyContent.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LoginLayout.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorTargetAssemblyInfo.cache
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.RazorTargetAssemblyInfo.cs
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.Views.pdb
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.dll
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.pdb
+E:\zz\sehetak\sehetak\sehetak\obj\Debug\netcoreapp2.1\sehetak.csproj.CopyComplete
+D:\sehetak\sehetak\obj\Debug\netcoreapp2.1\Razor\Views\Items\ItemCard.g.cshtml.cs

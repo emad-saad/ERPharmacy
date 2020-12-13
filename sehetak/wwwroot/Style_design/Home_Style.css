@@ -1,0 +1,19 @@
+﻿.float_right {
+    float: right
+}
+
+.text_right {
+    text-align: right;
+}
+.li_laft{
+background-color: #463838;
+border-radius: 17px; 
+padding: 5px 10px 5px 2px;
+}
+
+.li_right {
+    background-color: #c6bcbc;
+    border-radius: 17px;
+    padding: 5px 10px 5px 2px;
+    color:black!important;
+}

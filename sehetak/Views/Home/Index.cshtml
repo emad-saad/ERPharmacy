@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "LoginIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/background.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/login/css/login.css" type="text/css" />
+<link rel="stylesheet" href="~/login/css/component.css" type="text/css" />
+<style>
+    .form-control {
+        margin: 10px;
+    }
+
+    .container2 .clock {
+        width: 100% !important;
+    }
+
+    #back_circle {
+        background-image: url("~/images/circle.png");
+        width: 225px;
+        height: 225px;
+        float: left;
+        z-index: 9999;
+        position: relative;
+        background-size: 100% 100%;
+        margin-top: -10px;
+        text-align: center;
+    }
+    body {
+        overflow-y: hidden;
+        width:auto;
+        height:1000px;
+    }
+</style>
+
+
+
+
+<!--    ~~~~~~~~~~~~.login~~~~~~~.-->
+<body>
+    <div id="large-header" class="large-header" style="height:100%;">
+        <img src="~/images/blog_img1.jpg" style="position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+    z-index: -1;
+    " />
+        <div class="col-xs-12" id="center">
+
+            <div class="container_login" id="divLogin" style="position: fixed;top: 25%;z-index: 100;left:29%;">
+                <div id="back_circle">
+                    <img src="~/images/circle.png" style="width: 225px;
+        height: 225px;
+        float: left;
+        z-index: 9999;
+        position: relative;
+        background-size: 100% 100%;
+        margin-top: -3px;
+        text-align: center;" />
+                </div>
+                <div id="content_login">
+                    <div id="img_title">
+                        <h1> System login</h1>
+
+                    </div>
+                    <form asp-controller="Home" asp-action="Login">
+                        <div id="padding">
+                            <div class="div_input"> <input type="text" class="login_input" id="txtUserName" name="Username" placeholder="enter your Name"></div>
+                            <div class="div_input">  <input type="password" class="login_input" id="txtUserPassword" name="Password" placeholder="enter your Password"></div>
+                            <select id="cmbLanguage" style=" height: 25px; width: 271px;">
+                                <option value="ar">عربي</option>
+                                <option value="en">English</option>
+                            </select>
+
+
+
+                            <br />
+                            <input type="submit" class="login_btn" id="btnLogin" value="Login">
+                   
+
+                    </div>
+                   </form>
+                </div>
+
+                @*<div class="clear"></div>
+                <div id="shadow"></div>
+
+
+                <div class="clear"></div>*@
+            </div>
+
+
+            <!--                    <canvas id="demo-canvas"></canvas>-->
+
+
+
+
+        </div>
+        <!-- Related demos -->
+    </div><!-- /container -->
+    <!--    ~~~~~~~intro~~~~~~~.-->
+    <!--    ~~~~~~~~~~~~.login~~~~~~~.-->
+</body>
+
+
+        <script src="~/ClientApp/MessageBox.js"></script>
+        <script src="~/ClientApp/Pages/LoginComponent.js"></script>
+        @*<script src="~/ClientApp/Components/LoginComponent.js"></script>*@

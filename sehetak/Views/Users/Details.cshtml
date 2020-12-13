@@ -1,0 +1,96 @@
+﻿@model sehetak.Models.Users
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Users</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Userpassword)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Userpassword)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usercode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usercode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usergroup)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usergroup)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Userentry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Userentry)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserNomore)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserNomore)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Userlanguage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Userlanguage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifLastupdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModifLastupdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mitemsys)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mitemsys)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Branchcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Branchcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Userdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Userdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Userno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Userno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Storecode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Storecode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Entryuser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Entryuser)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Userid">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

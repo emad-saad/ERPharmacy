@@ -1,0 +1,149 @@
+﻿@model sehetak.Models.CustomClasses.mainModel
+@{
+    ViewData["Title"] = "ItemCard";
+    Layout = "~/Views/Shared/BodyContent.cshtml";
+}
+<style>
+    .table td, .table th {
+        border-top:none;
+       
+    }
+    .container-fluid .chBox {
+        width: 50px;
+    }
+   
+</style>
+
+    <h4 style="text-align:center ;background-color:gray;font-size:18px;color:white;border-style:ridge;border-radius:5px;">إضافة صنف جديد</h4>
+
+<form asp-action="InsertItemCard" asp-controller="Home">
+    
+        <table class="table table-responsive table-dark"  dir="rtl">
+
+            <tbody>
+                <tr>
+
+                    <td>كود 1<input type="text" required name="Code1" width="50px"/></td>
+                    <td>كود 2 <input type="text" name="code2" /></td>
+                    <td><input type="submit" value="اكواد دولية" /></td>
+                </tr>
+                <tr>
+
+                    <td>اسم الصنف عربى<input type="text" required name="itemarabicname" /></td>
+                    <td> اسم الصنف بالانجليزية<input type="text" required name="itemenglishname" /></td>
+
+                </tr>
+                <tr>
+
+                    <td>الشركة المنتجة @Html.DropDownListFor(m => m.Itemproducername, (IEnumerable<SelectListItem>)ViewBag.items, "--من فضلك اختر الشركة المنتجة --")</td>
+                    <td>الكود ف الشركة<input type="text" /></td>
+                    <td>صنف معتاد <input type="checkbox"  class="chBox" name="ItemOriginal" /></td>
+                </tr>
+                <tr>
+                    <td>دواء <input type="checkbox"  class="chBox" name="medicine" /></td>
+                    <td>له تاريخ صلاحية <input type="checkbox"  class="chBox" name="hasValidDate" /></td>
+                    <td>صنف ثلاجة <input type="checkbox"  class="chBox" name="FridgeItem" /></td>
+                
+                </tr>
+                <tr>
+                    <td>صنف خدمة <input type="checkbox"  class="chBox" name="ItemService" /></td>
+                    <td>طباعة باركود <input type="checkbox"  class="chBox" name="printBarcode" /></td>
+                    <td>طباعة اسم الصنف <input type="checkbox"  class="chBox" name="printItemName" /></td>
+                 
+                </tr>
+                <tr>
+
+                    <td>طبيعة الصنف @Html.DropDownListFor(m => m.itemsclassifname, (IEnumerable<SelectListItem>)ViewBag.itemsclassif, "--من فضلك اختر طبيعة الصنف --")</td>
+                    <td>مكان الصنف <input type="text" name="itemPlace" /></td>
+                    <td> لا يرتجع شراء <input type="checkbox"  class="chBox" name="noReturnable" /></td>
+                </tr>
+                <tr>
+
+                    <td>منشأ الصنف  @Html.DropDownListFor(m => m.itemsoriginname, (IEnumerable<SelectListItem>)ViewBag.itemsorig, "--من فضلك اختر منشأ الصنف --")</td>
+                    <td>فترة حساب متوسط البيع باالايام <input type="text" name="itemPeriod" /></td>
+                </tr>
+                <tr>
+
+
+                    <td>ملاحظات <input type="text" name="notes" /></td>
+                </tr>
+                <tr>
+
+                    <td>المجموعة العلمية <select name="ScientificGroup"><option></option></select></td>
+                    <td>الاسم العلمى <input type="text" /></td>
+                </tr>
+                <tr>
+
+                    <td> المادة الفعالة الاساسية<input type="text" name="MaddaFaala" /></td>
+                    <td>نسبة المادة الفعالة <input type="text" name="madaaFaalaPercent" /></td>
+
+                </tr>
+                <tr>
+
+                    <td>طريقة الاستخدام <select name="UsageWay"><option></option></select></td>
+
+
+                </tr>
+                <tr>
+                    <td>وقف التعامل مع الصنف <input type="checkbox"  class="chBox" name="stopItemDeal" /></td>
+                    <td>ايقاف بيع الصنف <input type="checkbox"  class="chBox" name="stopItemSales" /></td>
+                    <td>ايقاف شراء الصنف <input type="checkbox"  class="chBox" name="stopItemBuy" /></td>
+
+                </tr>
+                <tr>
+                    <td>السماح بإجراء خصم <input type="checkbox"  class="chBox" name="permissionToDiscount" /></td>
+                    <td>اقصى خصم قيمة <input type="text" name="MaxDiscountValue" /></td>
+                    <td>اقصى خصم نسبة <input type="text" name="MaxDiscountPercent" /> %</td>
+
+                </tr>
+                <tr>
+
+                    <td>خصم لكل العملاء عند البيع <input type="text" name="DiscountForAllCustomersValue" /> %</td>
+                    <td>دواعى الاستخدام <input type="text" name="UsageNeed" /></td>
+
+                </tr>
+                <tr>
+
+                    <td>الوحدة الكبرى @Html.DropDownListFor(m => m.itemsunitsname, (IEnumerable<SelectListItem>)ViewBag.itemsunits, "--من فضلك اختر وحدة الصنف --")</td>
+                    <td>الوحدة الصغرى <select name="smallUnit"><option></option></select></td>
+                    <td>عدد الوحدات <input type="text" name="UnitsCount" /></td>
+
+                </tr>
+                <tr>
+                    <td> الحدالاقصى<input type="text" name="MaxLimit" /></td>
+                    <td>الحد الادنى  <input type="text" name="minLimit" /></td>
+                    <td>  حد الطلب  <input type="text" name="LimitRequest" /></td>
+                </tr>
+                <tr>
+                    <td>الكمية الافتراضية عند الشراء<input type="text" name="virtualQtyOnBuy" /></td>
+                    <td>وحدة الشراء <select name="BuyUnit"><option></option></select></td>
+                    <td>وحدة البيع <select name="SaleUnit"><option></option></select></td>
+                </tr>
+                <tr>
+                    <td>صنف نواقص <input type="checkbox"  class="chBox" name="IsMinusItem" /></td>
+                    <td>صنف بيع كسور <input type="checkbox"  class="chBox" name="IsFractionItem" /></td>
+
+
+                </tr>
+                <tr>
+                    <td>سعر البيع <input type="text" name="SalesPrice" /></td>
+                    <td>الضريبة <input type="text" name="Tax" /></td>
+                    <td>نسبة الخصم <input type="text" name="DiscountPercent" /></td>
+                   
+                </tr>
+                <tr>
+                    <td>فرق سعر بيع الوحدة المتوسطة <input type="text" name="DiffPriceAvgSales" /></td>
+                    <td>فرق سعر بيع الوحدة الصغرى <input type="text" name="DiffPricesmSales" /></td>
+                    <td> سعر الشراء <input type="text" name="PurchasePrice" /></td>
+
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-primary">حفظ</button></td>
+
+
+                </tr>
+            </tbody>
+        </table>
+
+
+</form>

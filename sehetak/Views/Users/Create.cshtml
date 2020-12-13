@@ -1,0 +1,95 @@
+﻿@model sehetak.Models.Users
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Users</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Userid" class="control-label"></label>
+                <input asp-for="Userid" class="form-control" />
+                <span asp-validation-for="Userid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Userpassword" class="control-label"></label>
+                <input asp-for="Userpassword" class="form-control" />
+                <span asp-validation-for="Userpassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usercode" class="control-label"></label>
+                <input asp-for="Usercode" class="form-control" />
+                <span asp-validation-for="Usercode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usergroup" class="control-label"></label>
+                <input asp-for="Usergroup" class="form-control" />
+                <span asp-validation-for="Usergroup" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Userentry" class="control-label"></label>
+                <input asp-for="Userentry" class="form-control" />
+                <span asp-validation-for="Userentry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserNomore" class="control-label"></label>
+                <input asp-for="UserNomore" class="form-control" />
+                <span asp-validation-for="UserNomore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Userlanguage" class="control-label"></label>
+                <input asp-for="Userlanguage" class="form-control" />
+                <span asp-validation-for="Userlanguage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModifLastupdate" class="control-label"></label>
+                <input asp-for="ModifLastupdate" class="form-control" />
+                <span asp-validation-for="ModifLastupdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mitemsys" class="control-label"></label>
+                <input asp-for="Mitemsys" class="form-control" />
+                <span asp-validation-for="Mitemsys" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Branchcode" class="control-label"></label>
+                <input asp-for="Branchcode" class="form-control" />
+                <span asp-validation-for="Branchcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Userdate" class="control-label"></label>
+                <input asp-for="Userdate" class="form-control" />
+                <span asp-validation-for="Userdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Userno" class="control-label"></label>
+                <input asp-for="Userno" class="form-control" />
+                <span asp-validation-for="Userno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Storecode" class="control-label"></label>
+                <input asp-for="Storecode" class="form-control" />
+                <span asp-validation-for="Storecode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Entryuser" class="control-label"></label>
+                <input asp-for="Entryuser" class="form-control" />
+                <span asp-validation-for="Entryuser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

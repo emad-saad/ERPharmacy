@@ -1,0 +1,397 @@
+﻿@model sehetak.Models.Items
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/BodyContent.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Items</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Familycode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Familycode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Unitcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Unitcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemcostprice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemcostprice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemsaleprice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemsaleprice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemcodeAlt1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemcodeAlt1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemcodeAlt2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemcodeAlt2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemcodeAlt3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemcodeAlt3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemclassifcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemclassifcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemsalestax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemsalestax)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemsalepriceTax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemsalepriceTax)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itembarcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itembarcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pharmacydiscp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pharmacydiscp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Additionaldiscp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Additionaldiscp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Specialdiscp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Specialdiscp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemshapecode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemshapecode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemorigincode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemorigincode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemeffectcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemeffectcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Suppcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Suppcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemnameScientific)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemnameScientific)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemexpiry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemexpiry)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemcomment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemcomment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemsalepriceExtrap)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemsalepriceExtrap)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usercode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usercode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemnomoreuse)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemnomoreuse)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrintBarcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrintBarcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HiTypecode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HiTypecode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fmi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fmi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemsaleprice2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemsaleprice2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemslevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemslevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemproducercode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemproducercode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Suppitemcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Suppitemcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemsort)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemsort)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemmodified)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemmodified)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Packqty)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Packqty)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Unitsaleprice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Unitsaleprice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fridgeitem)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fridgeitem)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hasdifforigin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hasdifforigin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hasdiffpacks)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hasdiffpacks)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemtrans)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemtrans)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemsalestaxp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemsalestaxp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemmedicine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemmedicine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemstoreclassif)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemstoreclassif)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemupdtMonthlyqty)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ItemupdtMonthlyqty)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemlastupdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemlastupdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemtrans1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemtrans1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemtrans2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemtrans2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemtrans3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemtrans3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemsearchkey)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemsearchkey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemarchive)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemarchive)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemeffectcode2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemeffectcode2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itempartno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itempartno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemnosaleclassif)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemnosaleclassif)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemonweb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemonweb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemrefcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemrefcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemperformrate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemperformrate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itempointsys)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itempointsys)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemexpcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemexpcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Costcentercode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Costcentercode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemmanuf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemmanuf)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Itemglobalcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Itemglobalcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Testcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Testcode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Posdiscp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Posdiscp)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Itemcode">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

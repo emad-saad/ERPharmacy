@@ -1,0 +1,379 @@
+﻿@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - sehetak</title>
+
+        <environment include="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">sehetak</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <partial name="_CookieConsentPartial" />
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2020 - sehetak</p>
+            </footer>
+        </div>
+
+        <environment include="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+            </script>
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </environment>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+    </html>*@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link href="~/css/background.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/bootstrap-arabic.min.css">
+
+    <link rel="stylesheet" href="~/css/animate.css" />
+    <link rel="stylesheet" href="~/css/hover.css" />
+    <link rel="stylesheet" href="~/css/icon.css" />
+    <link rel="stylesheet" href="~/css/jquery-ui.css" />
+    <link rel="stylesheet" href="~/css/favourite.css" />
+    <link rel="stylesheet" href="~/css/jqpagination.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link rel="stylesheet" href="~/css/waitMe.css" />
+    <link rel="stylesheet" href="~/login/css/login.css"/>
+
+    <style>
+        * {
+            outline: none;
+        }
+
+        .GridButtonLabel {
+            background-color: darkgray;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+
+        textarea {
+            resize: none;
+        }
+
+        .JsGridHeaderCenter {
+            text-align: center;
+        }
+
+        .TransparentButton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+        }
+
+        .ui-iggrid-tablebody tr {
+            cursor: pointer;
+        }
+
+        .HiddenRow {
+            display: none !important;
+        }
+
+        #SearchBox {
+            z-index: 1041;
+            position: fixed;
+            padding-top: 19px;
+            background-color: white;
+            border-radius: 15px;
+            -moz-box-shadow: black 5px 4px 18px 0px;
+            -webkit-box-shadow: black 5px 4px 18px 0px;
+            box-shadow: black 5px 4px 18px 0px;
+        }
+
+        thead[role="rowgroup"] {
+            background-color: #d37db9;
+        }
+
+        .ui-widget-header {
+            background-color: #d37db9;
+            text-align: center !important;
+        }
+
+        .hiiden {
+            display: none;
+        }
+
+        #SearchGrid_container {
+            width: 100% !important;
+        }
+
+        .form-control {
+            padding: 3px !important;
+        }
+    </style>
+
+    <link href="~/Scripts/JsGrid/jsgrid.min.css" rel="stylesheet" />
+    <link href="~/Scripts/JsGrid/jsgrid-theme.min.css" rel="stylesheet" />
+
+    <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/animate.css" />
+
+</head>
+<body class="mainbackground">
+
+
+
+
+
+
+    @*<script src="~/ClientApp/HomeComponent.js"></script>*@
+    <div class="container-fluid margin yourdiv " style="padding-right: 0px !important;
+    padding-left: 0px !important;">
+        @RenderBody()
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="dir"></div>
+    <footer>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div id="dir_2" class="col-xs-1"></div>
+
+                <label for="inputPassword" class="col-md-1 col-xs-2 control-label text-right"><img src="~/images/bottom_save.png" width="29" height="29" alt=""></label>
+                <div class="col-md-2 col-xs-2">
+                    <input type="text" name="CreatedAt" class="form-control input-sm" id="txtCreatedAt" disabled style="margin-top:8px;">
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <input type="text" name="CreatedBy" class="form-control input-sm" id="txtCreatedBy" disabled style="margin-top:8px;">
+                </div>
+
+                <label for="inputPassword" class="col-md-1 col-xs-2 control-label text-right"><img src="~/images/bottom_icon.png" width="29" height="29" alt=""></label>
+                <div class="col-md-2 col-xs-2">
+                    <input type="text" name="UpdatedAt" class="form-control input-sm" id="txtUpdatedAt" disabled style="margin-top:8px;">
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <input type="text" name="UpdatedBy" class="form-control input-sm" id="txtUpdatedBy" disabled style="margin-top:8px;">
+                </div>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </footer>
+
+    <script src="~/ClientApp/App.js"></script>
+
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/waitMe.js"></script>
+    <script src="~/js/effect.js"></script>
+    <script src="~/js/my_js.js"></script>
+
+
+    @RenderSection("scripts", required: false);
+
+    @* needs to checks ~~ *@
+    <script src="~/Scripts/jsgrid/jsgrid.js"></script>
+    <script src="~/js/jquery.panelslider.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(".btn-warning").click(function () {
+                $("#SearchControlName").val(this.id);
+            });
+            $(".search_btn").click(function () {
+                $("#SearchControlName").val(this.id);
+            });
+
+
+            var tempLang = sessionStorage.getItem("temp_lang");
+            if (tempLang == "ar") {
+                RemoveStyleSheet("bootstrap.min");
+                AppendStyleSheet("bootstrap-arabic.min");
+                $('#langImg').attr('src', '~/images/english.png');
+            }
+            else {
+
+                RemoveStyleSheet("bootstrap-arabic.min");
+                AppendStyleSheet("bootstrap.min");
+                $('#langImg').attr('src', '~/images/sudia.png');
+
+            }
+
+            //$("#SearchBox").draggable();
+            App.Startup();
+
+            $("input[type=number]").on("keyup change mouseenter click", function () {
+
+                var val = parseFloat($(this).val());
+                var max = parseFloat($(this).attr("max"));
+                if (val > max) {
+                    $(this).val(max);
+                }
+            });
+        });
+
+        function AppendStyleSheet(fileName) {
+            var lnk = document.createElement('link');
+            lnk.href = "~/css/" + fileName + ".css";
+            lnk.rel = 'stylesheet';
+            lnk.type = 'text/css';
+            var $head = $("head");
+            var $headlinklast = $head.find("link[rel='stylesheet']:first");
+            $headlinklast.after(lnk);
+            //document.getElementsByTagName("head")[0].appendChild(lnk);
+        }
+
+        function RemoveStyleSheet(fileName) {
+            var href = "~/css/" + fileName + ".css";
+            $("link[rel=stylesheet][href~='" + href + "']").remove();
+        }
+    </script>
+
+    <script>
+        $('.item').hover(
+            function () {
+                var $this = $(this);
+                expand($this);
+            },
+            function () {
+                var $this = $(this);
+                collapse($this);
+            }
+        );
+
+        function expand($elem) {
+            var angle = 0;
+            var t = setInterval(function () {
+                if (angle == 1440) {
+                    clearInterval(t);
+                    return;
+                }
+                angle += 40;
+                $('.link', $elem).stop().animate({ rotate: '+=-40deg' }, 0);
+            }, 10);
+            $elem.stop().animate({ width: '110px' }, 1000)
+                .find('.item_content').fadeIn(400, function () {
+                    $(this).find('p').stop(true, true).fadeIn(600);
+                });
+        }
+
+        function collapse($elem) {
+            var angle = 1440;
+            var t = setInterval(function () {
+                if (angle == 0) {
+                    clearInterval(t);
+                    return;
+                }
+                angle -= 40;
+                $('.link', $elem).stop().animate({ rotate: '+=40deg' }, 0);
+            }, 10);
+            $elem.stop().animate({ width: '37px' }, 1000)
+                .find('.item_content').stop(true, true).fadeOut().find('p').stop(true, true).fadeOut();
+        }
+    </script>
+
+    <script>
+        $('#left-panel-link').panelslider();
+        $('#close-panel-bt').click(function () {
+            $.panelslider.close();
+        });
+    </script>
+
+    <script>
+        $(function () {
+            var current_effect = 'win8';
+            $('.save_ro').click(function () {
+                //run_waitMe(current_effect);
+                setTimeout(function () {
+                    $(".waitMe").removeAttr("style").fadeOut(200);
+                }, 4000);
+            });
+            function run_waitMe(effect) {
+                $('.yourdiv').waitMe({
+                    effect: effect,
+                    text: 'Please wait~.',
+                    bg: 'rgba(255,255,255,0.7)',
+                    color: '#000',
+                    sizeW: '',
+                    sizeH: ''
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            $("#LanguageButton").click(function () {
+                window.location.reload();
+            });
+        });
+    </script>
+
+
+    <script src="~/js/my_js.js">
+
+    </script>
+</body>
+</html>

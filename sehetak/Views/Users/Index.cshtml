@@ -1,0 +1,107 @@
+﻿@model IEnumerable<sehetak.Models.Users>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Userpassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usercode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usergroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Userentry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserNomore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Userlanguage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifLastupdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mitemsys)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Branchcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Userdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Userno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Storecode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Entryuser)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Userpassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usercode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usergroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Userentry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserNomore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Userlanguage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifLastupdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mitemsys)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Branchcode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Userdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Userno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Storecode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Entryuser)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Userid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Userid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Userid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
