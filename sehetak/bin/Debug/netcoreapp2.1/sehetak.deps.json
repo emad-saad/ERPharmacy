@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a83e209d102ddc5a61f7976cef576d204bddd4e2"
+    "signature": "e733eccfa7ac0e6926efcaf6b77c0112c35bd278"
   },
   "compilationOptions": {
     "defines": [
@@ -34,7 +34,9 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
           "Syncfusion.EJ2.AspNet.Core": "18.3.0.53",
-          "System.Linq.Dynamic.Core": "1.2.6"
+          "System.Linq.Dynamic.Core": "1.2.6",
+          "bootstrap": "4.5.3",
+          "jQuery": "3.5.1"
         },
         "runtime": {
           "sehetak.dll": {}
@@ -43,6 +45,13 @@
           "sehetak.dll": {}
         }
       },
+      "bootstrap/4.5.3": {
+        "dependencies": {
+          "jQuery": "3.5.1",
+          "popper.js": "1.16.1"
+        }
+      },
+      "jQuery/3.5.1": {},
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
         "dependencies": {
@@ -384,6 +393,7 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "popper.js/1.16.1": {},
       "Syncfusion.EJ2.AspNet.Core/18.3.0.53": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -3506,6 +3516,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "bootstrap/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KQvCPAvvWyDErmwn+VqTLE/9skJ7Ypt2EXfmU/YXQv+0jPjz5q8HH9xsbsVVVt+vlQd3fmE1SPLPxEVMOesTRg==",
+      "path": "bootstrap/4.5.3",
+      "hashPath": "bootstrap.4.5.3.nupkg.sha512"
+    },
+    "jQuery/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ji6sm/AI0vjASXAA/AG9Yf5ypALAqIDXFFKPHMAnFL8kp3xqULIWhACjg/OXZP88C56frYlIej2nrdBnhTMYQQ==",
+      "path": "jquery/3.5.1",
+      "hashPath": "jquery.3.5.1.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -3638,6 +3662,13 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "popper.js/1.16.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6GiVZho0vwBnId7pK7NLTjMGq4F0/VE65I08CCeKlarVoUt1w8SGTtJmhNo/0pK38EGUP/xbT4+OkWB8UTMPBw==",
+      "path": "popper.js/1.16.1",
+      "hashPath": "popper.js.1.16.1.nupkg.sha512"
     },
     "Syncfusion.EJ2.AspNet.Core/18.3.0.53": {
       "type": "package",

@@ -6,11 +6,9 @@
 <style>
     .table td, .table th {
         border-top:none;
-       
+       text-align:right;
     }
-    .container-fluid .chBox {
-        width: 50px;
-    }
+   
    
 </style>
 
@@ -23,21 +21,21 @@
             <tbody>
                 <tr>
 
-                    <td>كود 1<input type="text" required name="Code1" width="50px"/></td>
-                    <td>كود 2 <input type="text" name="code2" /></td>
-                    <td><input type="submit" value="اكواد دولية" /></td>
+                    <td>كود 1<input type="text" required name="Code1" class="form-control"/></td>
+                    <td>كود 2 <input type="text" name="code2" class="form-control"/></td>
+                
                 </tr>
                 <tr>
 
-                    <td>اسم الصنف عربى<input type="text" required name="itemarabicname" /></td>
-                    <td> اسم الصنف بالانجليزية<input type="text" required name="itemenglishname" /></td>
+                    <td>اسم الصنف عربى<input type="text" required name="itemarabicname" class="form-control"/></td>
+                    <td> اسم الصنف بالانجليزية<input type="text" required name="itemenglishname" class="form-control"/></td>
 
                 </tr>
                 <tr>
 
-                    <td>الشركة المنتجة @Html.DropDownListFor(m => m.Itemproducername, (IEnumerable<SelectListItem>)ViewBag.items, "--من فضلك اختر الشركة المنتجة --")</td>
-                    <td>الكود ف الشركة<input type="text" /></td>
-                    <td>صنف معتاد <input type="checkbox"  class="chBox" name="ItemOriginal" /></td>
+                    <td>الشركة المنتجة @Html.DropDownListFor(m => m.Itemproducername, (IEnumerable<SelectListItem>)ViewBag.items, "--من فضلك اختر الشركة المنتجة --", new { @class = "form-control" })</td>
+                    <td>الكود ف الشركة<input type="text"  class="form-control"/></td>
+                    <td>صنف معتاد <input type="checkbox"  class="chBox" name="ItemOriginal"  /></td>
                 </tr>
                 <tr>
                     <td>دواء <input type="checkbox"  class="chBox" name="medicine" /></td>
@@ -53,29 +51,29 @@
                 </tr>
                 <tr>
 
-                    <td>طبيعة الصنف @Html.DropDownListFor(m => m.itemsclassifname, (IEnumerable<SelectListItem>)ViewBag.itemsclassif, "--من فضلك اختر طبيعة الصنف --")</td>
-                    <td>مكان الصنف <input type="text" name="itemPlace" /></td>
+                    <td>طبيعة الصنف @Html.DropDownListFor(m => m.itemsclassifname, (IEnumerable<SelectListItem>)ViewBag.itemsclassif, "--من فضلك اختر طبيعة الصنف --", new { @class = "form-control" })</td>
+                    <td>مكان الصنف <input type="text" name="itemPlace" class="form-control"/></td>
                     <td> لا يرتجع شراء <input type="checkbox"  class="chBox" name="noReturnable" /></td>
                 </tr>
                 <tr>
 
-                    <td>منشأ الصنف  @Html.DropDownListFor(m => m.itemsoriginname, (IEnumerable<SelectListItem>)ViewBag.itemsorig, "--من فضلك اختر منشأ الصنف --")</td>
-                    <td>فترة حساب متوسط البيع باالايام <input type="text" name="itemPeriod" /></td>
+                    <td>منشأ الصنف  @Html.DropDownListFor(m => m.itemsoriginname, (IEnumerable<SelectListItem>)ViewBag.itemsorig, "--من فضلك اختر منشأ الصنف --", new { @class = "form-control" })</td>
+                    <td>فترة حساب متوسط البيع باالايام <input type="text" name="itemPeriod" class="form-control"/></td>
                 </tr>
                 <tr>
 
 
-                    <td>ملاحظات <input type="text" name="notes" /></td>
+                    <td>ملاحظات <input type="text" name="notes" class="form-control"/></td>
                 </tr>
                 <tr>
 
                     <td>المجموعة العلمية <select name="ScientificGroup"><option></option></select></td>
-                    <td>الاسم العلمى <input type="text" /></td>
+                    <td>الاسم العلمى <input type="text" class="form-control"/></td>
                 </tr>
                 <tr>
 
-                    <td> المادة الفعالة الاساسية<input type="text" name="MaddaFaala" /></td>
-                    <td>نسبة المادة الفعالة <input type="text" name="madaaFaalaPercent" /></td>
+                    <td> المادة الفعالة الاساسية<input type="text" name="MaddaFaala" class="form-control"/></td>
+                    <td>نسبة المادة الفعالة <input type="text" name="madaaFaalaPercent"  class="form-control"/></td>
 
                 </tr>
                 <tr>
@@ -98,24 +96,24 @@
                 </tr>
                 <tr>
 
-                    <td>خصم لكل العملاء عند البيع <input type="text" name="DiscountForAllCustomersValue" /> %</td>
-                    <td>دواعى الاستخدام <input type="text" name="UsageNeed" /></td>
+                    <td>خصم لكل العملاء عند البيع <input type="text" name="DiscountForAllCustomersValue" class="form-control"/> %</td>
+                    <td>دواعى الاستخدام <input type="text" name="UsageNeed" class="form-control"/></td>
 
                 </tr>
                 <tr>
 
-                    <td>الوحدة الكبرى @Html.DropDownListFor(m => m.itemsunitsname, (IEnumerable<SelectListItem>)ViewBag.itemsunits, "--من فضلك اختر وحدة الصنف --")</td>
+                    <td>الوحدة الكبرى @Html.DropDownListFor(m => m.itemsunitsname, (IEnumerable<SelectListItem>)ViewBag.itemsunits, "--من فضلك اختر وحدة الصنف --", new { @class = "form-control" })</td>
                     <td>الوحدة الصغرى <select name="smallUnit"><option></option></select></td>
-                    <td>عدد الوحدات <input type="text" name="UnitsCount" /></td>
+                    <td>عدد الوحدات <input type="text" name="UnitsCount" class="form-control"/></td>
 
                 </tr>
                 <tr>
-                    <td> الحدالاقصى<input type="text" name="MaxLimit" /></td>
-                    <td>الحد الادنى  <input type="text" name="minLimit" /></td>
-                    <td>  حد الطلب  <input type="text" name="LimitRequest" /></td>
+                    <td> الحدالاقصى<input type="text" name="MaxLimit" class="form-control"/></td>
+                    <td>الحد الادنى  <input type="text" name="minLimit" class="form-control" /></td>
+                    <td>  حد الطلب  <input type="text" name="LimitRequest" class="form-control"/></td>
                 </tr>
                 <tr>
-                    <td>الكمية الافتراضية عند الشراء<input type="text" name="virtualQtyOnBuy" /></td>
+                    <td>الكمية الافتراضية عند الشراء<input type="text" name="virtualQtyOnBuy" class="form-control"/></td>
                     <td>وحدة الشراء <select name="BuyUnit"><option></option></select></td>
                     <td>وحدة البيع <select name="SaleUnit"><option></option></select></td>
                 </tr>
@@ -126,15 +124,15 @@
 
                 </tr>
                 <tr>
-                    <td>سعر البيع <input type="text" name="SalesPrice" /></td>
-                    <td>الضريبة <input type="text" name="Tax" /></td>
-                    <td>نسبة الخصم <input type="text" name="DiscountPercent" /></td>
+                    <td>سعر البيع <input type="text" name="SalesPrice" class="form-control"/></td>
+                    <td>الضريبة <input type="text" name="Tax" class="form-control"/></td>
+                    <td>نسبة الخصم <input type="text" name="DiscountPercent" class="form-control"/></td>
                    
                 </tr>
                 <tr>
-                    <td>فرق سعر بيع الوحدة المتوسطة <input type="text" name="DiffPriceAvgSales" /></td>
-                    <td>فرق سعر بيع الوحدة الصغرى <input type="text" name="DiffPricesmSales" /></td>
-                    <td> سعر الشراء <input type="text" name="PurchasePrice" /></td>
+                    <td>فرق سعر بيع الوحدة المتوسطة <input type="text" name="DiffPriceAvgSales" class="form-control"/></td>
+                    <td>فرق سعر بيع الوحدة الصغرى <input type="text" name="DiffPricesmSales" class="form-control"/></td>
+                    <td> سعر الشراء <input type="text" name="PurchasePrice" class="form-control"/></td>
 
                 </tr>
                 <tr>

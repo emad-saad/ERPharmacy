@@ -69,18 +69,15 @@ namespace sehetak.Controllers
             //itemorig = itemorig.Where(o => o.Itemorigincode == search.Itemorigincode);
             //itemsunits = itemsunits.Where(u => u.Unitcode == search.Unitcode);
             //itemsclassif = itemsclassif.Where(c => c.Itemsclassifcode == search.Itemclassifcode);
-            if (item.Itemproducername == null) ViewBag.item = " ";
-            else
+           
                 ViewBag.items = item.Itemproducername;
-            if (itemorig == null) ViewBag.itemsorig = " ";
-            else
+          
                 ViewBag.itemorig = itemorig.Itemoriginname;
-            if (itemsunits.Unitname == null) ViewBag.itemsorig = " ";
-            else
+            
 
                 ViewBag.itemsunits = itemsunits.Unitname;
-            if (itemsclassif.Itemsclassifname == null) ViewBag.itemsclassif = " ";
-            else ViewBag.itemsclassif = itemsclassif.Itemsclassifname;
+           
+             ViewBag.itemsclassif = itemsclassif.Itemsclassifname;
 
             return View("ItemCard", query);
         }

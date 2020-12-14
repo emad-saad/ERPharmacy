@@ -17,420 +17,238 @@
     <title>Sidebar template</title>
 
     <!-- using online links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 
 
-    <link rel="stylesheet" href="~/css/menu/sidebar-themes.css">
-    <link rel="shortcut icon" type="image/png" href="~/images/favicon.png" />
-    <link rel="stylesheet" href="~/css/menu/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+  
     <style>
+        * {
+            box-sizing: border-box;
+        }
 
-        .container-fluid {
-            font-size:12px;
-          
+        body {
+            margin: 0;
         }
-        .container-fluid input {
-          width:250px;
+
+        .navbar1 {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .sidebar-submenu ul li :hover{
-            background-color:dodgerblue;
+
+            .navbar1 a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        .dropdown1 {
+            float: left;
+            overflow: hidden;
         }
-        .container-fluid .chBox {
-            width: 50px;
+
+            .dropdown1 .dropbtn {
+                font-size: 12px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+
+            .navbar1 a:hover, .dropdown1:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content1 .header {
+                background: red;
+                padding: 16px;
+                color: white;
+            }
+
+        .dropdown1:hover .dropdown-content1 {
+            display: block;
+        }
+
+        .column h3 {
+            text-align: right;
+        }
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33%;
+            padding: 10px;
+            background-color: #ccc;
+            height: 1000px;
+        }
+
+            .column a {
+                float: none;
+                color: black;
+                padding: 16px;
+                text-decoration: none;
+                display: block;
+                text-align: right;
+            }
+
+                .column a:hover {
+                    background-color: cornflowerblue;
+                }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 
 </head>
 
 
-   <body>
+<body>
 
 
-    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
-        <nav id="sidebar" class="sidebar-wrapper">
-            <div class="sidebar-content">
-                <!-- sidebar-brand  -->
-                <div class="sidebar-item sidebar-brand">
-                    <a href="#">Se7etak</a>
+    <div class="navbar1">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown1">
+            <button class="dropbtn">
+                القائمة الرئيسية
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+                <div class="header">
+                    <h2>Main Menu</h2>
                 </div>
-                <!-- sidebar-header  -->
-                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
-                    
-                    <div class="user-info">
-                        <span class="user-name">
-                            Jhon
-                            <strong>Smith</strong>
-                        </span>
-                        <span class="user-role">Administrator</span>
-                        <span class="user-status">
-                            <i class="fa fa-circle"></i>
-                            <span>Online</span>
-                        </span>
+                <div class="row">
+                    <div class="column">
+                        <h3>العمليات - المشتريات والموردين</h3>
+                        <a asp-action="TalabSarfAsnaf" asp-controller="Home">
+                            امر توريد / طلب صرف أصناف
+
+                        </a>
+
+                        <a asp-action="EzenEstlamAssnaf" asp-controller="Home">إذن إستلام أصناف</a>
+
+                        <a asp-action="Purchase" asp-controller="Home">المشتريات</a>
+
+                        <a asp-action="Returns" asp-controller="Home">مرتجعات للموردين</a>
+
+                    </div>
+                    <div class="column">
+                        <h3>العمليات - المبيعات والعملاء</h3>
+                        <a href="#">صلاحيات العمليات النقديه</a>
+                        <a href="#">العروض الخاصة للمبيعات</a>
+                        <a href="#">نقطة البيع المباشر</a>
+                        <a href="#">نقطة الارتجاع المباشر</a>
+                        <a href="#">مرتجعات من واقع فاتورة مبيعات مباشرة</a>
+                        <a href="#">نقطة البيع غير المباشر</a>
+                        <a href="#">نقطة الارتجاع غير المباشر</a>
+                        <a href="#">مرتجعات من واقع فاتورة مبيعات غير مباشرة</a>
+                        <a href="#">الكاشير</a>
+                        <a href="#">طلبات مركز خدمة العملاء</a>
+                        <a href="#">تفعيل ايرادات العملاء</a>
+                        <a href="#">اصدار مطالبة لعميل</a>
+                        <a href="#">حجزالاصناف للعملاء</a>
+                        <a href="#">عروض الاسعار للعملاء</a>
+                        <a href="#">التقاط الاتصالات التليفونيه الواردة</a>
+                        <a href="#">حركة دخول وخروج السائقين للمنازل</a>
+                    </div>
+                    <div class="column">
+                        <h3>العمليات إدارة المخزون</h3>
+                        <a href="#">البيانات الاساسيه للمخازن</a>
+                        <a href="#">المخازن المختلفه</a>
+                        <a href="#">البيانات الاساسيه للاصناف</a>
+                        <a href="#">المكونات الفعاله للادوية</a>
+                        <a asp-controller="Items" asp-action="ItemCard">كارت الصنف</a>
+                        <a href="#">تعديل سعر المستهلك للاصناف</a>
+                        <a href="#">الارصدة</a>
+                        <a href="#">جرد اصناف مخزن</a>
+                        <a href="#">اصدار صرف اصناف تالفة / هوالك</a>
+                        <a href="#">اشعار تحويل بين المخازن</a>
+                        <a href="#">اذن صرف اصناف مصروفات</a>
+                        <a href="#">اذن استلام اصناف مصروفات</a>
+                    </div>
+                    <div class="column">
+                        <h3>الحسابات - المدفوعات والمقبوضات</h3>
+                        <a href="#">بنود المدفوعات والمقبوضات اليوميه المتنوعه</a>
+                        <a href="#">الارصدة الافتتاحيه للمدفوعات والمقبوضات المتنوعه </a>
+                        <a href="#">البنوك والخزائن</a>
+                        <a href="#">البنك الميحوب عليها شيكات المديونين</a>
+                        <a href="#">الارصدة الافتتاحيه للبنوك والخزائن</a>
+                        <a href="#">الارصدة الافتتاحبه لشيكات تحت التحصيل ولم تقدم للصرف</a>
+                        <a href="#">بيانات الشركاء</a>
+                        <a href="#">العملات واسعار التثبيت</a>
+                        <a href="#">السقف الاعلى اليومى لشيكات المدفوعات</a>
+                        <a href="#">المدفوعات والمقبوضات</a>
+                        <a href="#">توريد الشيكات للبنك / التسليم للمستفيدين</a>
+                        <a href="#">تحصيل / سداد الشيكات البنكيه</a>
+                        <a href="#">العهد المؤقتة والمستديمه</a>
+                        <a href="#">المصؤوفات المتكررة المدفوعه مقدما</a>
+                    </div>
+                    <div class="column">
+                        <h3>إدارة العلاقة بالعملاء - خدمة العملاء</h3>
+                        <a href="#">بنود المدفوعات والمقبوضات اليوميه المتنوعه</a>
+                        <a href="#">بيانات اساسية خدة العملاء</a>
+                        <a href="#">خدمة العملاء</a>
+                        <a href="#">طلبات خدمة لعميل</a>
+                        <a href="#">مهام الموظفين</a>
+                        <a href="#">التقاط الاتصالات التليفونيه الواردة</a>
+                    </div>
+                    <div class="column">
+                        <h3>إدارة النظام</h3>
+                        <a href="#">تصنيف فئات الجهات</a>
+                        <a href="#">الارضدةالافتتاحية لجهات العمل</a>
+                        <a href="#">بيانات الاطباء المحولين</a>
+                        <a href="#">بيانات الموردين</a>
+                        <a href="#">تعديل بيانات الموردين</a>
+                        <a href="#">بيانات اساسية متنوعه</a>
+                        <a href="#">بيانات العملاء</a>
+                        <a href="#">تعديل بيانات العملاء</a>
+                        <a href="#">بيانات العملاء للافراد</a>
+                        <a href="#">تعديل ارصدة النقاط للعملاء الافراد</a>
+                        <a href="#">تعديل بيانات العملاء الافراد</a>
+                        <a href="#">بيانات اساسية استقصاءات العملاء</a>
+                        <a href="#">الفروع المختلفه</a>
+                        <a href="#">بيانات اساسية طبية</a>
                     </div>
                 </div>
-                <!-- sidebar-search  -->
-                <div class="sidebar-item sidebar-search">
-                    <div>
-                        <div class="input-group">
-                            <input type="text" class="form-control search-menu" placeholder="Search...">
-                            <div class="input-group-append">
-                                <span class="input-group-text">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- sidebar-menu  -->
-                <div class=" sidebar-item sidebar-menu">
-                    <ul>
-                        <li class="header-menu">
-                            <span style="text-align:right">القائمة الرئيسية</span>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-
-                                <span class="menu-text">العمليات - المشتريات والموردين</span>
-
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li>
-                                        <a asp-action="TalabSarfAsnaf" asp-controller="Home">
-                                            امر توريد / طلب صرف أصناف
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a asp-action="EzenEstlamAssnaf" asp-controller="Home">إذن إستلام أصناف</a>
-                                    </li>
-                                    <li>
-                                        <a asp-action="Purchase" asp-controller="Home">المشتريات</a>
-                                    </li>
-                                    <li>
-                                        <a asp-action="Returns" asp-controller="Home">مرتجعات للموردين</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-
-                                <span class="menu-text">العمليات - المبيعات والعملاء</span>
-
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="#">صلاحيات العمليات النقديه</a></li>
-                                    <li><a href="#">العروض الخاصة للمبيعات</a></li>
-                                    <li><a href="#">نقطة البيع المباشر</a></li>
-                                    <li><a href="#">نقطة الارتجاع المباشر</a></li>
-                                    <li><a href="#">مرتجعات من واقع فاتورة مبيعات مباشرة</a></li>
-                                    <li><a href="#">نقطة البيع غير المباشر</a></li>
-                                    <li><a href="#">نقطة الارتجاع غير المباشر</a></li>
-                                    <li><a href="#">مرتجعات من واقع فاتورة مبيعات غير مباشرة</a></li>
-                                    <li><a href="#">الكاشير</a></li>
-                                    <li><a href="#">طلبات مركز خدمة العملاء</a></li>
-                                    <li><a href="#">تفعيل ايرادات العملاء</a></li>
-                                    <li><a href="#">اصدار مطالبة لعميل</a></li>
-                                    <li><a href="#">حجزالاصناف للعملاء</a></li>
-                                    <li><a href="#">عروض الاسعار للعملاء</a></li>
-                                    <li><a href="#">التقاط الاتصالات التليفونيه الواردة</a></li>
-                                    <li><a href="#">حركة دخول وخروج السائقين للمنازل</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                @*<i class="far fa-gem"></i>*@
-                                <span class="menu-text">العمليات إدارة المخزون</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="#">البيانات الاساسيه للمخازن</a></li>
-                                    <li><a href="#">المخازن المختلفه</a></li>
-                                    <li><a href="#">البيانات الاساسيه للاصناف</a></li>
-                                    <li><a href="#">المكونات الفعاله للادوية</a></li>
-                                    <li><a asp-controller="Items" asp-action="ItemCard">كارت الصنف</a></li>
-                                    <li><a href="#">تعديل سعر المستهلك للاصناف</a></li>
-                                    <li><a href="#">الارصدة</a></li>
-                                    <li><a href="#">جرد اصناف مخزن</a></li>
-                                    <li><a href="#">اصدار صرف اصناف تالفة / هوالك</a></li>
-                                    <li><a href="#">اشعار تحويل بين المخازن</a></li>
-                                    <li><a href="#">اذن صرف اصناف مصروفات</a></li>
-                                    <li><a href="#">اذن استلام اصناف مصروفات</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-
-                                <span class="menu-text">الحسابات - المدفوعات والمقبوضات</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="#">بنود المدفوعات والمقبوضات اليوميه المتنوعه</a></li>
-                                    <li><a href="#">الارصدة الافتتاحيه للمدفوعات والمقبوضات المتنوعه </a></li>
-                                    <li><a href="#">البنوك والخزائن</a></li>
-                                    <li><a href="#">البنك الميحوب عليها شيكات المديونين</a></li>
-                                    <li><a href="#">الارصدة الافتتاحيه للبنوك والخزائن</a></li>
-                                    <li><a href="#">الارصدة الافتتاحبه لشيكات تحت التحصيل ولم تقدم للصرف</a></li>
-                                    <li><a href="#">بيانات الشركاء</a></li>
-                                    <li><a href="#">العملات واسعار التثبيت</a></li>
-                                    <li><a href="#">السقف الاعلى اليومى لشيكات المدفوعات</a></li>
-                                    <li><a href="#">المدفوعات والمقبوضات</a></li>
-                                    <li><a href="#">توريد الشيكات للبنك / التسليم للمستفيدين</a></li>
-                                    <li><a href="#">تحصيل / سداد الشيكات البنكيه</a></li>
-                                    <li><a href="#">العهد المؤقتة والمستديمه</a></li>
-                                    <li><a href="#">المصؤوفات المتكررة المدفوعه مقدما</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                @*<i class="fa fa-globe"></i>*@
-                                <span class="menu-text">إدارة العلاقة بالعملاء - خدمة العملاء</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="#">بيانات اساسية خدة العملاء</a></li>
-                                    <li><a href="#">خدمة العملاء</a></li>
-                                    <li><a href="#">طلبات خدمة لعميل</a></li>
-                                    <li><a href="#">مهام الموظفين</a></li>
-                                    <li><a href="#">التقاط الاتصالات التليفونيه الواردة</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                @*<i class="fa fa-globe"></i>*@
-                                <span class="menu-text">إدارة النظام</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="#">تصنيف فئات الجهات</a></li>
-                                    <li><a href="#">الارضدةالافتتاحية لجهات العمل</a></li>
-                                    <li><a href="#">بيانات الاطباء المحولين</a></li>
-                                    <li><a href="#">بيانات الموردين</a></li>
-                                    <li><a href="#">تعديل بيانات الموردين</a></li>
-                                    <li><a href="#">بيانات اساسية متنوعه</a></li>
-                                    <li><a href="#">بيانات العملاء</a></li>
-                                    <li><a href="#">تعديل بيانات العملاء</a></li>
-                                    <li><a href="#">بيانات العملاء للافراد</a></li>
-                                    <li><a href="#">تعديل ارصدة النقاط للعملاء الافراد</a></li>
-                                    <li><a href="#">تعديل بيانات العملاء الافراد</a></li>
-                                    <li><a href="#">بيانات اساسية استقصاءات العملاء</a></li>
-                                    <li><a href="#">الفروع المختلفه</a></li>
-                                    <li><a href="#">بيانات اساسية طبية</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        @*<li>
-                            <a href="#">
-                                <i class="fa fa-calendar"></i>
-                                <span class="menu-text">Calendar</span>
-                            </a>
-                        </li>*@
-                        @*<li>
-                            <a href="#">
-                                <i class="fa fa-folder"></i>
-                                <span class="menu-text">Examples</span>
-                            </a>
-                        </li>*@
-                    </ul>
-                </div>
-                <!-- sidebar-menu  -->
             </div>
-            <!-- sidebar-footer  -->
-            @*<div class="sidebar-footer">
-                <div class="dropdown">
-
-                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-bell"></i>
-                        <span class="badge badge-pill badge-warning notification">3</span>
-                    </a>
-                    <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
-                        <div class="notifications-header">
-                            <i class="fa fa-bell"></i>
-                            Notifications
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">
-                            <div class="notification-content">
-                                <div class="icon">
-                                    <i class="fas fa-check text-success border border-success"></i>
-                                </div>
-                                <div class="content">
-                                    <div class="notification-detail">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo
-                                    </div>
-                                    <div class="notification-time">
-                                        6 minutes ago
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <div class="notification-content">
-                                <div class="icon">
-                                    <i class="fas fa-exclamation text-info border border-info"></i>
-                                </div>
-                                <div class="content">
-                                    <div class="notification-detail">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo
-                                    </div>
-                                    <div class="notification-time">
-                                        Today
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <div class="notification-content">
-                                <div class="icon">
-                                    <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
-                                </div>
-                                <div class="content">
-                                    <div class="notification-detail">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo
-                                    </div>
-                                    <div class="notification-time">
-                                        Yesterday
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-center" href="#">View all notifications</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-envelope"></i>
-                        <span class="badge badge-pill badge-success notification">7</span>
-                    </a>
-                    <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
-                        <div class="messages-header">
-                            <i class="fa fa-envelope"></i>
-                            Messages
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">
-                            <div class="message-content">
-                                <div class="pic">
-                                    <img src="~/images/user.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="message-title">
-                                        <strong> Jhon doe</strong>
-                                    </div>
-                                    <div class="message-detail">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <div class="message-content">
-                                <div class="pic">
-                                    <img src="~/images/user.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="message-title">
-                                        <strong> Jhon doe</strong>
-                                    </div>
-                                    <div class="message-detail">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <div class="message-content">
-                                <div class="pic">
-                                    <img src="~/images/user.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="message-title">
-                                        <strong> Jhon doe</strong>
-                                    </div>
-                                    <div class="message-detail">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-center" href="#">View all messages</a>
-
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-cog"></i>
-                        <span class="badge-sonar"></span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
-                        <a class="dropdown-item" href="#">My profile</a>
-                        <a class="dropdown-item" href="#">Help</a>
-                        <a class="dropdown-item" href="#">Setting</a>
-                    </div>
-                </div>
-                <div>
-                    <a href="#">
-                        <i class="fa fa-power-off"></i>
-                    </a>
-                </div>
-                <div class="pinned-footer">
-                    <a href="#">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </a>
-                </div>
-            </div>*@
-        </nav>
-        <!-- page-content  -->
-
-        <main class="page-content pt-2">
-            <div id="overlay" class="overlay"></div>
-            <div class="container-fluid table-responsive text-right " dir="rtl" >
-                @RenderBody()
-            </div>
-        </main>
-        <!-- page-content" -->
+        </div>
     </div>
-    <!-- page-wrapper -->
-    <!-- using online scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
-    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <!-- using local scripts -->
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+    <div style="padding:16px">
+        @RenderBody()
+    </div>
 
-    
-    <script src="~/js/menu/main.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js">
+
+    </script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
 </body>
 
 </html>

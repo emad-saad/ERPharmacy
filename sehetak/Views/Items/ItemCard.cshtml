@@ -3,168 +3,179 @@
     ViewData["Title"] = "ItemCard";
     Layout = "~/Views/Shared/BodyContent.cshtml";
 }
-<style>
-    .btn-primary {
-        margin-right: 8px;
-        margin-bottom: 5px;
-    }
-    .table td, .table th {
-        border-top: none;
-    }
-   
-   
-</style>
+<head>
+    <style>
+        .table td, .table th {
+            border-top: none;
+            text-align: right;
+        }
+        .btn {
+            margin: 5px;
+        }
+        .me {
+            margin-top: 24px;
+        }
+        .table input {
+            width:300px
+        }
+        input[type=checkbox], input[type=radio] {
+            box-sizing: border-box;
+            padding: 0;
+            width:50px;
+        }
+    </style>
 
 
+</head>
 
-<table class="table table-primary table-sm" dir="rtl">
+<table class="table table-primary  table-responsive table-sm" dir="rtl">
 
     <tbody>
         <tr>
 
-            <td>
 
-                @using (Html.BeginForm("search", "Items", FormMethod.Post))
-                {
-                <td>كود 1<input type="text" required name="code" id="code" /></td>
-                <td>كود 2 <input type="text" name="searchString" /></td>
 
-                <button class="btn btn-primary"> بحث</button>
+            @using (Html.BeginForm("search", "Items", FormMethod.Post))
+            {
+                <td>كود 1<input type="text" required name="code" id="code" class="form-control" /></td>
+                <td>كود 2 <input type="text" name="searchString" class="form-control" /></td>
+
+                <td> <button class="btn btn-primary me"> بحث</button> </td>
             }
 
-                @using (Html.BeginForm("ItemCard", "home"))
-                {
+
+            @using (Html.BeginForm("ItemCard", "home"))
+            {
 
 
-                    <button class="btn btn-primary"> اضافة صنف</button>
-                }
-                </td>
+                <button class="btn btn-primary"> اضافة صنف</button>
+            }
 
 
 
-
-            </tr>
-            <form asp-action="Edit" asp-controller="Items">
-        <td hidden>كود 1<input type="text" required name="code" value="@Model.Itemcode" /></td>
-
-        <tr>
-            <td>اسم الصنف عربى<input type="text" name="itemarabicname" value="@Model.Itemname" /></td>
-            <td> اسم الصنف بالانجليزية<input type="text" required name="itemenglishname" value="@Model.Itemname" /></td>
-
-        </tr>
-        <tr>
-
-            <td>الشركة المنتجة <input type="text" vlaue="@ViewBag.item" /></td>
-            <td>الكود ف الشركة<input type="text" /></td>
-        </tr>
-        <tr>
-            <td>دواء <input type="checkbox"  class="chBox" name="medicine" /></td>
-            <td>له تاريخ صلاحية <input type="checkbox"  class="chBox" name="hasValidDate" value="@Model.Itemexpiry" /></td>
-            <td>صنف ثلاجة <input type="checkbox"  class="chBox" name="FridgeItem" /></td>
-          
-        </tr>
-        <tr>
-            <td>صنف معتاد <input type="checkbox"  class="chBox" name="ItemOriginal" /></td>
-            <td> لا يرتجع شراء <input type="checkbox"  class="chBox" name="noReturnable" /></td>
-            <td>ايقاف شراء الصنف <input type="checkbox"  class="chBox" name="stopItemBuy" /></td>
-        </tr>
-        <tr>
-            <td>صنف خدمة <input type="checkbox"  class="chBox" name="ItemService" /></td>
-            <td>طباعة باركود <input type="checkbox"  class="chBox" name="printBarcode" /></td>
-            <td>طباعة اسم الصنف <input type="checkbox"  class="chBox" name="printItemName" /></td>
-          
-        </tr>
-        <tr>
-
-            <td>طبيعة الصنف <input type="text" value="@ViewBag.itemsclassif" /></td>
-            <td>مكان الصنف <input type="text" name="itemPlace" /></td>
-        </tr>
-        <tr>
-
-            <td>منشأ الصنف  <input type="text" value="@ViewBag.itemsorig" /></td>
-            <td>فترة حساب متوسط البيع باالايام <input type="text" name="itemPeriod" /></td>
-        </tr>
-        <tr>
-
-
-            <td>ملاحظات <input type="text" name="notes" value="@Model.Itemcomment" /></td>
-        </tr>
-        <tr>
-
-            <td>المجموعة العلمية <select name="ScientificGroup"><option></option></select></td>
-            <td>الاسم العلمى <input type="text" /></td>
-        </tr>
-        <tr>
-
-            <td> المادة الفعالة الاساسية<input type="text" name="MaddaFaala" /></td>
-            <td>نسبة المادة الفعالة <input type="text" name="madaaFaalaPercent" /></td>
-
-        </tr>
-        <tr>
-
-            <td>طريقة الاستخدام <select name="UsageWay"><option></option></select></td>
 
 
         </tr>
-        <tr>
-            <td>وقف التعامل مع الصنف <input type="checkbox"  class="chBox" name="stopItemDeal" /></td>
-            <td>ايقاف بيع الصنف <input type="checkbox"  class="chBox" name="stopItemSales" /></td>
-         
+        <form asp-action="Edit" asp-controller="Items">
+           
+    <td hidden>كود 1<input type="text" required name="code" value="@Model.Itemcode" class="form-control" /></td>
 
-        </tr>
-        <tr>
-            <td>السماح بإجراء خصم <input type="checkbox"  class="chBox" name="permissionToDiscount" /></td>
-            <td>اقصى خصم قيمة <input type="text" name="MaxDiscountValue" value="@Model.Pharmacydiscp" /></td>
-            <td>اقصى خصم نسبة <input type="text" name="MaxDiscountPercent" /> %</td>
+    <tr>
+        <td>اسم الصنف عربى<input type="text" name="itemarabicname" value="@Model.Itemname" class="form-control" /></td>
+        <td> اسم الصنف بالانجليزية<input type="text" required name="itemenglishname" value="@Model.Itemname" class="form-control" /></td>
 
-        </tr>
-        <tr>
+    </tr>
+    <tr>
 
-            <td>خصم لكل العملاء عند البيع <input type="text" name="DiscountForAllCustomersValue" /> %</td>
-            <td>دواعى الاستخدام <input type="text" name="UsageNeed" /></td>
-            <td> سعر الشراء <input type="text" name="PurchasePrice" /></td>
-        </tr>
-        <tr>
+        <td>الشركة المنتجة <input type="text" value="@ViewBag.items" class="form-control" /></td>
+        <td>الكود ف الشركة<input type="text" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td>دواء <input type="checkbox" class="chBox" name="medicine" /></td>
+        <td>له تاريخ صلاحية <input type="checkbox" class="chBox" name="hasValidDate" value="@Model.Itemexpiry" /></td>
+        <td>صنف ثلاجة <input type="checkbox" class="chBox" name="FridgeItem" /></td>
 
-            <td>الوحدة الكبرى <input type="text" value="@ViewBag.itemsunits"</td>
-            <td>الوحدة الصغرى <select name="smallUnit"><option></option></select></td>
-            <td>عدد الوحدات <input type="text" name="UnitsCount" /></td>
+    </tr>
+    <tr>
+        <td>صنف معتاد <input type="checkbox" class="chBox" name="ItemOriginal" /></td>
+        <td> لا يرتجع شراء <input type="checkbox" class="chBox" name="noReturnable" /></td>
+        <td>ايقاف شراء الصنف <input type="checkbox" class="chBox" name="stopItemBuy" /></td>
+    </tr>
+    <tr>
+        <td>صنف خدمة <input type="checkbox" class="chBox" name="ItemService" /></td>
+        <td>طباعة باركود <input type="checkbox" class="chBox" name="printBarcode" /></td>
+        <td>طباعة اسم الصنف <input type="checkbox" class="chBox" name="printItemName" /></td>
 
-        </tr>
-        <tr>
-            <td>الحدالاقصى<input type="text" name="MaxLimit" /></td>
-            <td>الحد الادنى <input type="text" name="minLimit" /></td>
-            <td>حد الطلب <input type="text" name="LimitRequest" /></td>
-        </tr>
-        <tr>
-            <td>الكمية الافتراضية عند الشراء<input type="text" name="virtualQtyOnBuy" /></td>
-            <td>وحدة الشراء <select name="BuyUnit"><option></option></select></td>
-            <td>وحدة البيع <select name="SaleUnit"><option></option></select></td>
-        </tr>
-        <tr>
-            <td>صنف نواقص <input type="checkbox"  class="chBox" name="IsMinusItem" /></td>
-            <td>صنف بيع كسور <input type="checkbox"  class="chBox" name="IsFractionItem" /></td>
+    </tr>
+    <tr>
 
+        <td>طبيعة الصنف <input type="text" value="@ViewBag.itemsclassif" class="form-control" /></td>
+        <td>مكان الصنف <input type="text" name="itemPlace" class="form-control" /></td>
+    </tr>
+    <tr>
 
-        </tr>
-        <tr>
-            <td>سعر البيع <input type="text" name="SalesPrice" value="@Model.Itemsaleprice" /></td>
-            <td>الضريبة <input type="text" name="Tax" value="@Model.ItemsalepriceTax" /></td>
-            <td>نسبة الخصم <input type="text" name="DiscountPercent" /></td>
-          
-        </tr>
-        <tr>
-            <td>فرق سعر بيع الوحدة المتوسطة <input type="text" name="DiffPriceAvgSales" /></td>
-            <td>فرق سعر بيع الوحدة الصغرى <input type="text" name="DiffPricesmSales" /></td>
-
-        </tr>
-      
-        </tbody>
-        <button class="btn btn-primary"> تعديل</button>
-
-        </form>
-    </table>
-    
+        <td>منشأ الصنف  <input type="text" value="@ViewBag.itemsorig" class="form-control" /></td>
+        <td>فترة حساب متوسط البيع باالايام <input type="text" name="itemPeriod" class="form-control" /></td>
+    </tr>
+    <tr>
 
 
-      
+        <td>ملاحظات <input type="text" name="notes" value="@Model.Itemcomment" class="form-control" /></td>
+    </tr>
+    <tr>
+
+        <td>المجموعة العلمية <select name="ScientificGroup"><option></option></select></td>
+        <td>الاسم العلمى <input type="text" class="form-control"/></td>
+    </tr>
+    <tr>
+
+        <td> المادة الفعالة الاساسية<input type="text" name="MaddaFaala" class="form-control" /></td>
+        <td>نسبة المادة الفعالة <input type="text" name="madaaFaalaPercent" class="form-control" /></td>
+
+    </tr>
+    <tr>
+
+        <td>طريقة الاستخدام <select name="UsageWay"><option></option></select></td>
+
+
+    </tr>
+    <tr>
+        <td>وقف التعامل مع الصنف <input type="checkbox" class="chBox" name="stopItemDeal" /></td>
+        <td>ايقاف بيع الصنف <input type="checkbox" class="chBox" name="stopItemSales" /></td>
+
+
+    </tr>
+    <tr>
+        <td>السماح بإجراء خصم <input type="checkbox" class="chBox" name="permissionToDiscount" /></td>
+        <td>اقصى خصم قيمة <input type="text" name="MaxDiscountValue" value="@Model.Pharmacydiscp" class="form-control" /></td>
+        <td>اقصى خصم نسبة <input type="text" name="MaxDiscountPercent" class="form-control" /></td>
+
+    </tr>
+    <tr>
+
+        <td>خصم لكل العملاء عند البيع <input type="text" name="DiscountForAllCustomersValue" class="form-control" /></td>
+        <td>دواعى الاستخدام <input type="text" name="UsageNeed" class="form-control" /></td>
+        <td> سعر الشراء <input type="text" name="PurchasePrice" class="form-control" /></td>
+    </tr>
+    <tr>
+
+        <td>الوحدة الكبرى <input type="text" value="@ViewBag.itemsunits" class="form-control" /></td>
+        <td>الوحدة الصغرى <select name="smallUnit"><option></option></select></td>
+        <td>عدد الوحدات <input type="text" name="UnitsCount" class="form-control" /></td>
+
+    </tr>
+    <tr>
+        <td>الحدالاقصى<input type="text" name="MaxLimit" class="form-control" /></td>
+        <td>الحد الادنى <input type="text" name="minLimit" class="form-control" /></td>
+        <td>حد الطلب <input type="text" name="LimitRequest" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td>الكمية الافتراضية عند الشراء<input type="text" name="virtualQtyOnBuy" class="form-control" /></td>
+        <td>وحدة الشراء <select name="BuyUnit"><option></option></select></td>
+        <td>وحدة البيع <select name="SaleUnit"><option></option></select></td>
+    </tr>
+    <tr>
+        <td>صنف نواقص <input type="checkbox" class="chBox" name="IsMinusItem" /></td>
+        <td>صنف بيع كسور <input type="checkbox" class="chBox" name="IsFractionItem" /></td>
+
+
+    </tr>
+    <tr>
+        <td>سعر البيع <input type="text" name="SalesPrice" value="@Model.Itemsaleprice" class="form-control" /></td>
+        <td>الضريبة <input type="text" name="Tax" value="@Model.ItemsalepriceTax" class="form-control" /></td>
+        <td>نسبة الخصم <input type="text" name="DiscountPercent" class="form-control" /></td>
+
+    </tr>
+    <tr>
+        <td>فرق سعر بيع الوحدة المتوسطة <input type="text" name="DiffPriceAvgSales" class="form-control" /></td>
+        <td>فرق سعر بيع الوحدة الصغرى <input type="text" name="DiffPricesmSales" class="form-control" /></td>
+
+    </tr>
+
+    </tbody>
+    <button class="btn btn-primary"> تعديل</button>
+
+    </form>
+</table>
+       
+
