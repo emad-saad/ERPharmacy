@@ -1325,7 +1325,7 @@ using sehetak.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(11578, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66e30cf409ee468ab0bb5638b25f9072", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c28d9004def4138929bdd53ed101cfb", async() => {
                 BeginContext(11630, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -1360,7 +1360,7 @@ using sehetak.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(11646, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c495589aa1147749b94546b5b4653f9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1df402cb55724251b8fdb49f2e8c0e7d", async() => {
                 BeginContext(11668, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

@@ -13,7 +13,7 @@ namespace sehetak.Controllers
     public class HomeController : Controller
     {
         private readonly SOFTECHDB9Context _context;
-
+        public static string UserLogin { get; set; }
         public HomeController(SOFTECHDB9Context context)
         {
             _context = context;
@@ -21,7 +21,10 @@ namespace sehetak.Controllers
        
         public IActionResult Index()
         {
-            return View();
+          
+                return View();
+            
+           
         }
         public IActionResult Purchase()
         {
@@ -43,49 +46,51 @@ namespace sehetak.Controllers
 
         public IActionResult ItemCard()
         {
+          
 
-            //Ahmed zoz
 
-            List<Itemsproducers> cl = new List<Itemsproducers>();
-            cl = (from c in _context.Itemsproducers select c).ToList();
-           
-            ViewBag.items = (from item in cl
-                             select new SelectListItem
-                             {
-                                 Text = item.Itemproducername,
-                             });
-            ///////////////////////////////////////////////////////////////////////المنشأ
-            List<Itemsorigin> itemorg = new List<Itemsorigin>();
-            itemorg = (from c in _context.Itemsorigin select c).ToList();
+                //Ahmed zoz
 
-            ViewBag.itemsorig = (from item in itemorg
-                             select new SelectListItem
-                             {
-                                 Text = item.Itemoriginname,
-                             });
-            ///////////////////////////////////////////////////////////////////////العبوة
-            List<Itemsunits> itemsunits = new List<Itemsunits>();
-            itemsunits = (from c in _context.Itemsunits select c).ToList();
+                List<Itemsproducers> cl = new List<Itemsproducers>();
+                cl = (from c in _context.Itemsproducers select c).ToList();
 
-            ViewBag.itemsunits = (from item in itemsunits
+                ViewBag.items = (from item in cl
                                  select new SelectListItem
                                  {
-                                     Text = item.Unitname,
+                                     Text = item.Itemproducername,
                                  });
-            ///////////////////////////////////////////////////////////////////////طبيعة
-            List<Itemsclassif> itemsclassif = new List<Itemsclassif>();
-            itemsclassif = (from c in _context.Itemsclassif select c).ToList();
+                ///////////////////////////////////////////////////////////////////////المنشأ
+                List<Itemsorigin> itemorg = new List<Itemsorigin>();
+                itemorg = (from c in _context.Itemsorigin select c).ToList();
 
-            ViewBag.itemsclassif = (from item in itemsclassif
-                                    select new SelectListItem
-                                  {
-                                      Text = item.Classifnamearabic,
-                                  });
-            return View();
+                ViewBag.itemsorig = (from item in itemorg
+                                     select new SelectListItem
+                                     {
+                                         Text = item.Itemoriginname,
+                                     });
+                ///////////////////////////////////////////////////////////////////////العبوة
+                List<Itemsunits> itemsunits = new List<Itemsunits>();
+                itemsunits = (from c in _context.Itemsunits select c).ToList();
+
+                ViewBag.itemsunits = (from item in itemsunits
+                                      select new SelectListItem
+                                      {
+                                          Text = item.Unitname,
+                                      });
+                ///////////////////////////////////////////////////////////////////////طبيعة
+                List<Itemsclassif> itemsclassif = new List<Itemsclassif>();
+                itemsclassif = (from c in _context.Itemsclassif select c).ToList();
+
+                ViewBag.itemsclassif = (from item in itemsclassif
+                                        select new SelectListItem
+                                        {
+                                            Text = item.Classifnamearabic,
+                                        });
+                return View();
+
             
+
         }
-
-
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -100,10 +105,24 @@ namespace sehetak.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> InsertItemCard(Items items)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(items);
+                await _context.SaveChangesAsync();
+                return View("ItemCard");
+            }
+            return View("ItemCard");
+        }
+
         public IActionResult Privacy()
         {
             return View();
         }
+
         public async Task<IActionResult> Login(string Username, string Password)
         {
             string _password = SecuritySystem.Encrypt(Password);
@@ -117,6 +136,8 @@ namespace sehetak.Controllers
             }
             else
             {
+                //UserLogin = Username;
+                //return RedirectToAction("Index", "Home", new { userid = Username });
                 return View();
             }
             
